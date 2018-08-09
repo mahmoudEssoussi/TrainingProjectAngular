@@ -1,0 +1,18 @@
+
+
+<div class="card">
+  <h5 class="card-header">Dynamic Table</h5>
+  <div class="card-body">
+    <h5 class="card-title">good luck</h5>
+   
+     <app-star [numberStar]="star" ></app-star>
+     
+   
+
+    <app-rows-cols-input (number)="paramsRecieved($event)"></app-rows-cols-input>
+   
+ <br>
+    <app-rows-cols [getparams]="params"></app-rows-cols>
+
+  </div>
+</div>

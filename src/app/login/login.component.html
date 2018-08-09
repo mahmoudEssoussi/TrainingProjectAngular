@@ -1,0 +1,37 @@
+<div class="loginCont">
+
+
+  <div class="container-fluid" style="margin: auto">
+
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="row justify-content-md-center">
+      <div class="card w-45 text-center">
+        <div class="card-block">
+
+
+
+          <input formControlName="username" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="Enter email" >
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+
+
+
+          <input formControlName="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+
+          <div class="form-group form-check">
+            <a [routerLink]="['/register']" class="btn btn-link"> forget Password </a>
+          </div>
+          <div class="row justify-content-between">
+            <div class="col-4">
+              <button type="submit" class="btn btn-primary">login</button>
+            </div>
+
+            <div class="col-4">
+              <a [routerLink]="['/register']" class="btn btn-link"> register </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <app-list-user (user)='userRecieved($event)' ></app-list-user>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body" *ngIf="user">
+          <h5 class="card-title">{{user.username}}</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+       
+        </div>
+      </div>
+    </div>
+  </div>

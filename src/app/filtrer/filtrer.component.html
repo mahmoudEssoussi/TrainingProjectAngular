@@ -1,0 +1,23 @@
+
+<div class="card text-center">
+  <div class="card-header">
+list Users
+  </div>
+  <div class="card-block " >
+    <h4 class="card-title">filtred by {{message}} </h4>
+    <p class="card-text" ></p>
+
+
+    <div class="card" style="width: 20rem;" *ngFor='let user of filteredUser' >
+      <div class="card-block">
+        <h4 class="card-title">{{user.username}}</h4>
+        <p class="card-text" >{{user.email}} </p>
+      
+      </div>
+    </div>
+
+
+  </div>
+
+</div>
+

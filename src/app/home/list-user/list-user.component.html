@@ -1,0 +1,12 @@
+<div class="list-group">
+
+  <div class="d-flex w-100 justify-content-between" *ngFor='let user of users'>
+ 
+   
+    <app-user-picker [u]='user' (user)='userRecieved($event)'></app-user-picker>
+   
+  </div>
+
+ 
+
+</div>

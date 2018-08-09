@@ -1,0 +1,35 @@
+<nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+  <a class="navbar-brand" href="#">
+    <img src="/assets/logo.PNG" width="30" height="30" alt="" class="d-inline-block align-top rounded">
+  </a>
+  <div class="collapse navbar-collapse">
+    <div class="form-inline mt-2 mt-md-0" >
+  
+      <input   [(ngModel)]='message' (ngModelChange)="onChangeSearch($event)"   class="form-control mr-sm-2" type="text" placeholder="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+   
+    </div>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+    
+      </li>
+
+    </ul>
+    
+    <div class="btn-group">
+      <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        options
+      </button>
+      <div class="dropdown-menu dropdown-menu-right">
+        <button class="dropdown-item" type="button">profile</button>
+        <button class="dropdown-item" type="button">setting</button>
+        <button class="dropdown-item" type="button" (click)="logout()">logout</button>
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+</nav>

@@ -1,0 +1,17 @@
+
+ <div [ngClass]="{'alert alert-danger':lessThanOne,'alert alert-primary':moreThanOne,'alert alert-warning':moreThanFourth}" role="alert">
+    
+    <strong>{{etat}}</strong>
+    
+<div class="crop" >
+
+  
+    <div style="width: 86px">
+        <span class="glyphicon  "  [ngClass]="{'glyphicon-star-empty':lessThanOne ,'glyphicon-star':moreThanOne|| moreThanFourth}" ></span>
+        <span class="glyphicon " [ngClass]="{'glyphicon-star-empty':lessThanOne,'glyphicon-star':moreThanOne|| moreThanFourth}"></span>
+        <span class="glyphicon " [ngClass]="{'glyphicon-star-empty':lessThanOne || moreThanOne,'glyphicon-star':moreThanFourth}"></span>
+        <span class="glyphicon " [ngClass]="{'glyphicon-star-empty':lessThanOne || moreThanOne,'glyphicon-star':moreThanFourth}"></span>
+        <span class="glyphicon " [ngClass]="{'glyphicon-star-empty':lessThanOne || moreThanOne,'glyphicon-star':moreThanFourth}"></span>
+    </div>
+</div>
+</div>

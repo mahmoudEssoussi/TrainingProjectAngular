@@ -1,0 +1,17 @@
+<div class="panel panel-primary ">
+  <div class="panel-heading ">change the color . try it your self !!!</div>
+  <div class="panel-body ">
+    <div class="thumbnail color">
+
+      <div class="caption"  [ngStyle]="{'background-color': color}">
+        <h3>Thumbnail label</h3>
+        <p>...</p>
+        <span class="input-group-btn">
+          <button class="btn btn-default" (click)='changeColor()' type="button">Go!</button>
+        
+        <input type="color" [(ngModel)]='color' class="form-control" placeholder="Search for...">
+      </span>
+      </div>
+    </div>
+  </div>
+</div>
